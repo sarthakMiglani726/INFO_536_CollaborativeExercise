@@ -29,3 +29,13 @@ attacks_per_year <- gtd_year %>%
 # Checking the attack data
 head(attacks_per_year)
 
+#Role 3 (S.S.R)
+  # Creating a bar plot for the number of attacks per year
+  ggplot(attacks_per_year, aes(x = iyear, y = attack_count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(title = "Number of Terrorist Attacks Per Year",
+       x = "Year",
+       y = "Number of Attacks") +
+  theme_minimal()
+
+  
